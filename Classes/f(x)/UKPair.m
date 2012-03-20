@@ -34,12 +34,12 @@
 
 -(BOOL)isEqual:(id)pair {
 	BOOL equal = NO;
-    if (pair == self) {
-        equal = YES;
+        if (pair == self) {
+                 equal = YES;
 	} else if (pair && [pair isKindOfClass:[self class]]) {
-        equal = [self isEqualToPair:pair];
+                 equal = [self isEqualToPair:pair];
 	}
-    return equal;
+        return equal;
 }
 
 -(BOOL)isEqualToPair:(UKPair *)pair {
