@@ -65,7 +65,7 @@
 }
 
 -(NSString *)description {
-	return [NSString stringWithFormat:@"UKPair{ key: %@, value: %@ }", self.key, self.value];
+	return [[super description] stringByAppendingFormat:@"{ key: %@, value: %@ }", self.key, self.value];
 }
 
 @end
