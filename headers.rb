@@ -14,7 +14,7 @@ year = DateTime.now.year.to_s
 apache     = File.open('apache.txt').readlines
 template   = apache.join
 
-Dir.glob('{Classes/**/*, Tests/**/*}.[m, h]').each do |f|
+Dir.glob('{Classes/**/*,Tests/**/*}.[m, h]').each do |f|
   file   = File.open(f, 'r+')
   lines  = file.readlines
   header = template % [File.basename(file.path), year, name]
