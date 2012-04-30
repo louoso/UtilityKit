@@ -140,11 +140,9 @@
 	NSMutableSet * original = [NSMutableSet setWithObjects:thing1, thing2, nil];
 	NSMutableSet * copy = [original deepCopy];
 	STAssertEqualObjects(original, copy, @"\n%@\n should equal \n%@\n", original, copy);
-	IndexHolder * thing3 = [[[IndexHolder alloc]init]autorelease];
-	thing3.index = 3;
-	[copy addObject:thing3];
-	STAssertTrue([copy count] == 3, @"copy should now have 3 items in it");
-	STAssertFalse([original isEqual:copy], @"\n%@\n should not equal \n%@\n", original, copy);
+	thing1.index = 3;
+	thing2.index = 4;
+	STAssertFalse([original isEqualToSet:copy], @"\n%@\n should not equal \n%@\n", original, copy);
 }
 
 @end

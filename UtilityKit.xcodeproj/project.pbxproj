@@ -26,9 +26,9 @@
 		BF11D1E4152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1E2152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h */; };
 		BF11D1E5152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1E3152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m */; };
 		BF11D1E6152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1E3152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m */; };
-		BF11D1EB152154F300067CE2 /* NSMutableSet.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1E9152154F300067CE2 /* NSMutableSet.h */; };
-		BF11D1EC152154F300067CE2 /* NSMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1EA152154F300067CE2 /* NSMutableSet.m */; };
-		BF11D1ED152154F300067CE2 /* NSMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1EA152154F300067CE2 /* NSMutableSet.m */; };
+		BF11D1EB152154F300067CE2 /* NSMutableSet+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1E9152154F300067CE2 /* NSMutableSet+UKDeepCopy.h */; };
+		BF11D1EC152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1EA152154F300067CE2 /* NSMutableSet+UKDeepCopy.m */; };
+		BF11D1ED152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1EA152154F300067CE2 /* NSMutableSet+UKDeepCopy.m */; };
 		BF3A16F4151807F80073ACA4 /* NSArray+UKFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3A16EA151807F80073ACA4 /* NSArray+UKFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF3A16F5151807F80073ACA4 /* NSArray+UKFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3A16EB151807F80073ACA4 /* NSArray+UKFunctions.m */; };
 		BF3A16F6151807F80073ACA4 /* NSDictionary+UKFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3A16EC151807F80073ACA4 /* NSDictionary+UKFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,8 +72,8 @@
 		BF11D1DA1521542100067CE2 /* NSMutableArray+UKDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+UKDeepCopy.m"; sourceTree = "<group>"; };
 		BF11D1E2152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+UKDeepCopy.h"; sourceTree = "<group>"; };
 		BF11D1E3152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+UKDeepCopy.m"; sourceTree = "<group>"; };
-		BF11D1E9152154F300067CE2 /* NSMutableSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableSet.h; sourceTree = "<group>"; };
-		BF11D1EA152154F300067CE2 /* NSMutableSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableSet.m; sourceTree = "<group>"; };
+		BF11D1E9152154F300067CE2 /* NSMutableSet+UKDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+UKDeepCopy.h"; sourceTree = "<group>"; };
+		BF11D1EA152154F300067CE2 /* NSMutableSet+UKDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+UKDeepCopy.m"; sourceTree = "<group>"; };
 		BF3A16E4151807C10073ACA4 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3A16E5151807C10073ACA4 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		BF3A16EA151807F80073ACA4 /* NSArray+UKFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UKFunctions.h"; sourceTree = "<group>"; };
@@ -173,8 +173,8 @@
 				BF11D1DA1521542100067CE2 /* NSMutableArray+UKDeepCopy.m */,
 				BF11D1E2152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h */,
 				BF11D1E3152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m */,
-				BF11D1E9152154F300067CE2 /* NSMutableSet.h */,
-				BF11D1EA152154F300067CE2 /* NSMutableSet.m */,
+				BF11D1E9152154F300067CE2 /* NSMutableSet+UKDeepCopy.h */,
+				BF11D1EA152154F300067CE2 /* NSMutableSet+UKDeepCopy.m */,
 			);
 			name = copy;
 			path = Classes/copy;
@@ -245,7 +245,7 @@
 				BF11D0DC151FABF500067CE2 /* UKDeepCopyCollections.h in Headers */,
 				BF11D1DB1521542100067CE2 /* NSMutableArray+UKDeepCopy.h in Headers */,
 				BF11D1E4152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h in Headers */,
-				BF11D1EB152154F300067CE2 /* NSMutableSet.h in Headers */,
+				BF11D1EB152154F300067CE2 /* NSMutableSet+UKDeepCopy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +356,7 @@
 				BF11D0F9151FAFC200067CE2 /* UKDeepCopyCollectionsTests.m in Sources */,
 				BF11D1DD1521542100067CE2 /* NSMutableArray+UKDeepCopy.m in Sources */,
 				BF11D1E6152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m in Sources */,
-				BF11D1ED152154F300067CE2 /* NSMutableSet.m in Sources */,
+				BF11D1ED152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +373,7 @@
 				BF11D0D3151FAB9700067CE2 /* NSSet+UKDeepCopy.m in Sources */,
 				BF11D1DC1521542100067CE2 /* NSMutableArray+UKDeepCopy.m in Sources */,
 				BF11D1E5152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m in Sources */,
-				BF11D1EC152154F300067CE2 /* NSMutableSet.m in Sources */,
+				BF11D1EC152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

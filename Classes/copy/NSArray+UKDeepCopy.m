@@ -23,7 +23,6 @@
 }
 
 -(id)deepCopyWithZone:(NSZone *)zone {
-	//Class clazz = [self isKindOfClass:[NSMutableArray class]] ? [NSMutableArray class] : [NSArray class];
 	return [[NSArray allocWithZone:zone] initWithArray:self copyItems:YES];
 }
 

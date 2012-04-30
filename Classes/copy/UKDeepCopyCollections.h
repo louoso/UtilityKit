@@ -14,5 +14,8 @@
 //   limitations under the License.
 
 #import "NSArray+UKDeepCopy.h"
+#import "NSMutableArray+UKDeepCopy.h"
 #import "NSDictionary+UKDeepCopy.h"
+#import "NSMutableDictionary+UKDeepCopy.h"
 #import "NSSet+UKDeepCopy.h"
+#import "NSMutableSet+UKDeepCopy.h"
