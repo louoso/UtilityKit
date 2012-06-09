@@ -13,14 +13,12 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 #import <Foundation/Foundation.h>
+#import "UKModel.h"
 
-
-@interface UKPair : NSObject
+@interface UKPair : UKModel
 
 @property (nonatomic, retain) NSObject * key;
 @property (nonatomic, retain) NSObject * value;
-
--(BOOL)isEqualToPair:(UKPair *)pair;
 
 +(UKPair *)pairWithKey:(NSObject *)key value:(NSObject *)value;
 
