@@ -99,7 +99,4 @@
 	return allGroups;
 }
 
-//flatten
-//zipWithIndex
-
 @end
