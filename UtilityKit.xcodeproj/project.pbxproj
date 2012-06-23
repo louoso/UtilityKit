@@ -9,28 +9,28 @@
 /* Begin PBXBuildFile section */
 		AA747D9F0F9514B9006C5449 /* UtilityKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* UtilityKit_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		BF01A5B91583CDC9009FEF33 /* UKModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF01A5B71583CDC9009FEF33 /* UKModel.h */; };
+		BF01A5B91583CDC9009FEF33 /* UKModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF01A5B71583CDC9009FEF33 /* UKModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF01A5BA1583CDC9009FEF33 /* UKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01A5B81583CDC9009FEF33 /* UKModel.m */; };
 		BF01A5BB1583CDC9009FEF33 /* UKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01A5B81583CDC9009FEF33 /* UKModel.m */; };
 		BF01A5BF1583CE24009FEF33 /* UKModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01A5BE1583CE24009FEF33 /* UKModelTests.m */; };
 		BF11D0C5151FAAE800067CE2 /* NSArray+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D0C4151FAAE800067CE2 /* NSArray+UKDeepCopy.m */; };
-		BF11D0C6151FAAE800067CE2 /* NSArray+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D0C3151FAAE800067CE2 /* NSArray+UKDeepCopy.h */; };
+		BF11D0C6151FAAE800067CE2 /* NSArray+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D0C3151FAAE800067CE2 /* NSArray+UKDeepCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF11D0C7151FAAE800067CE2 /* NSArray+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D0C4151FAAE800067CE2 /* NSArray+UKDeepCopy.m */; };
 		BF11D0CD151FAB8400067CE2 /* NSDictionary+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D0CB151FAB8400067CE2 /* NSDictionary+UKDeepCopy.h */; };
 		BF11D0CE151FAB8400067CE2 /* NSDictionary+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D0CC151FAB8400067CE2 /* NSDictionary+UKDeepCopy.m */; };
 		BF11D0CF151FAB8400067CE2 /* NSDictionary+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D0CC151FAB8400067CE2 /* NSDictionary+UKDeepCopy.m */; };
-		BF11D0D2151FAB9700067CE2 /* NSSet+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D0D0151FAB9700067CE2 /* NSSet+UKDeepCopy.h */; };
+		BF11D0D2151FAB9700067CE2 /* NSSet+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D0D0151FAB9700067CE2 /* NSSet+UKDeepCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF11D0D3151FAB9700067CE2 /* NSSet+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D0D1151FAB9700067CE2 /* NSSet+UKDeepCopy.m */; };
 		BF11D0D4151FAB9700067CE2 /* NSSet+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D0D1151FAB9700067CE2 /* NSSet+UKDeepCopy.m */; };
-		BF11D0DC151FABF500067CE2 /* UKDeepCopyCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D0DA151FABF500067CE2 /* UKDeepCopyCollections.h */; };
+		BF11D0DC151FABF500067CE2 /* UKDeepCopyCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D0DA151FABF500067CE2 /* UKDeepCopyCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF11D0F9151FAFC200067CE2 /* UKDeepCopyCollectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D0F8151FAFC200067CE2 /* UKDeepCopyCollectionsTests.m */; };
-		BF11D1DB1521542100067CE2 /* NSMutableArray+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1D91521542100067CE2 /* NSMutableArray+UKDeepCopy.h */; };
+		BF11D1DB1521542100067CE2 /* NSMutableArray+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1D91521542100067CE2 /* NSMutableArray+UKDeepCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF11D1DC1521542100067CE2 /* NSMutableArray+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1DA1521542100067CE2 /* NSMutableArray+UKDeepCopy.m */; };
 		BF11D1DD1521542100067CE2 /* NSMutableArray+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1DA1521542100067CE2 /* NSMutableArray+UKDeepCopy.m */; };
-		BF11D1E4152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1E2152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h */; };
+		BF11D1E4152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1E2152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF11D1E5152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1E3152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m */; };
 		BF11D1E6152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1E3152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m */; };
-		BF11D1EB152154F300067CE2 /* NSMutableSet+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1E9152154F300067CE2 /* NSMutableSet+UKDeepCopy.h */; };
+		BF11D1EB152154F300067CE2 /* NSMutableSet+UKDeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11D1E9152154F300067CE2 /* NSMutableSet+UKDeepCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF11D1EC152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1EA152154F300067CE2 /* NSMutableSet+UKDeepCopy.m */; };
 		BF11D1ED152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF11D1EA152154F300067CE2 /* NSMutableSet+UKDeepCopy.m */; };
 		BF3A16F4151807F80073ACA4 /* NSArray+UKFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3A16EA151807F80073ACA4 /* NSArray+UKFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +48,11 @@
 		BF3A1701151807F80073ACA4 /* UKPair.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3A16F3151807F80073ACA4 /* UKPair.m */; };
 		BF3A17041518080F0073ACA4 /* UKFunctionalCollectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3A17031518080F0073ACA4 /* UKFunctionalCollectionsTests.m */; };
 		BF3A170D151808790073ACA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3A17051518083A0073ACA4 /* CoreGraphics.framework */; };
+		BF58E05915965D3700B729CC /* UKEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58E05815965D3700B729CC /* UKEncodingTests.m */; };
+		BF58E05D15965D5300B729CC /* NSString+UKURLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = BF58E05B15965D5300B729CC /* NSString+UKURLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF58E05E15965D5300B729CC /* NSString+UKURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */; };
+		BF58E06315965DC900B729CC /* UKEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = BF58E06115965DC900B729CC /* UKEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF58E07B159667D700B729CC /* NSString+UKURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +101,11 @@
 		BF3A17031518080F0073ACA4 /* UKFunctionalCollectionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKFunctionalCollectionsTests.m; sourceTree = "<group>"; };
 		BF3A17051518083A0073ACA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BF3A171C1518090D0073ACA4 /* UKFunctionalCollectionsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFunctionalCollectionsTests.h; sourceTree = "<group>"; };
+		BF58E05715965D3700B729CC /* UKEncodingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKEncodingTests.h; sourceTree = "<group>"; };
+		BF58E05815965D3700B729CC /* UKEncodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKEncodingTests.m; sourceTree = "<group>"; };
+		BF58E05B15965D5300B729CC /* NSString+UKURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UKURLEncoding.h"; sourceTree = "<group>"; };
+		BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UKURLEncoding.m"; sourceTree = "<group>"; };
+		BF58E06115965DC900B729CC /* UKEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKEncoding.h; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libUtilityKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUtilityKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +163,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF58E05A15965D5300B729CC /* net */,
 				BF01A5B61583CDC9009FEF33 /* model */,
 				BF11D0C2151FAAE800067CE2 /* copy */,
 				BF3A16E9151807F80073ACA4 /* f(x) */,
@@ -222,6 +233,7 @@
 		BF3A16DC1518076A0073ACA4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BF58E05615965D3700B729CC /* net */,
 				BF01A5BC1583CE24009FEF33 /* model */,
 				BF11D0F6151FAFC200067CE2 /* copy */,
 				BF3A17021518080F0073ACA4 /* f(x) */,
@@ -256,6 +268,27 @@
 			path = "Tests/f(x)";
 			sourceTree = "<group>";
 		};
+		BF58E05615965D3700B729CC /* net */ = {
+			isa = PBXGroup;
+			children = (
+				BF58E05715965D3700B729CC /* UKEncodingTests.h */,
+				BF58E05815965D3700B729CC /* UKEncodingTests.m */,
+			);
+			name = net;
+			path = Tests/net;
+			sourceTree = "<group>";
+		};
+		BF58E05A15965D5300B729CC /* net */ = {
+			isa = PBXGroup;
+			children = (
+				BF58E05B15965D5300B729CC /* NSString+UKURLEncoding.h */,
+				BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */,
+				BF58E06115965DC900B729CC /* UKEncoding.h */,
+			);
+			name = net;
+			path = Classes/net;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -277,6 +310,8 @@
 				BF11D1E4152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.h in Headers */,
 				BF11D1EB152154F300067CE2 /* NSMutableSet+UKDeepCopy.h in Headers */,
 				BF01A5B91583CDC9009FEF33 /* UKModel.h in Headers */,
+				BF58E05D15965D5300B729CC /* NSString+UKURLEncoding.h in Headers */,
+				BF58E06315965DC900B729CC /* UKEncoding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +425,8 @@
 				BF11D1ED152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */,
 				BF01A5BB1583CDC9009FEF33 /* UKModel.m in Sources */,
 				BF01A5BF1583CE24009FEF33 /* UKModelTests.m in Sources */,
+				BF58E05915965D3700B729CC /* UKEncodingTests.m in Sources */,
+				BF58E07B159667D700B729CC /* NSString+UKURLEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +445,7 @@
 				BF11D1E5152154BB00067CE2 /* NSMutableDictionary+UKDeepCopy.m in Sources */,
 				BF11D1EC152154F300067CE2 /* NSMutableSet+UKDeepCopy.m in Sources */,
 				BF01A5BA1583CDC9009FEF33 /* UKModel.m in Sources */,
+				BF58E05E15965D5300B729CC /* NSString+UKURLEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
