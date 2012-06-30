@@ -51,7 +51,7 @@
 	for(int i = 0; i < [self.text count]; i++) {
 		test = [[self.text objectAtIndex:i] urlEncode];
 		expected = [self.encoded objectAtIndex:i];
-		STAssertEqualObjects(expected, test, @"\n%@\n should equal \n%@\n", expected, test);
+		STAssertEqualObjects(test, expected, @"\nUnexpected result of URL encoding\n");
 	}
 }
 
@@ -61,11 +61,11 @@
 	for(int i = 0; i < [self.text count]; i++) {
 		test = [[self.encoded objectAtIndex:i] urlDecode];
 		expected = [self.text objectAtIndex:i];
-		STAssertEqualObjects(expected, test, @"\n%@\n should equal \n%@\n", expected, test);
+		STAssertEqualObjects(test, expected, @"\nUnexpected result of URL decoding\n");
 	}
 	test = [@"+" urlDecode];
 	expected = @" ";
-	STAssertEqualObjects(expected, test, @"\n%@\n should equal \n%@\n", expected, test);
+	STAssertEqualObjects(test, expected, @"\nUnexpected result of URL decoding\n");
 }
 
 @end
