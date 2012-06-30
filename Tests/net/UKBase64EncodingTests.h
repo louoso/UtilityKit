@@ -1,4 +1,4 @@
-//   UKEncoding.h
+//   UKBase64EncodingTests.h
 //   Copyright 2012 Louis Vera
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +12,13 @@
 //   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
+#import <SenTestingKit/SenTestingKit.h>
+#import <UIKit/UIKit.h>
 
-#import "NSString+UKURLEncoding.h"
-#import "NSData+UKBase64.h"
 
+@interface UKBase64EncodingTests : SenTestCase
+
+@property (nonatomic, retain) NSData * data;
+@property (nonatomic, retain) NSString * encoded;
+
+@end
