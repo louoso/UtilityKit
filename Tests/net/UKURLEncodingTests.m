@@ -1,4 +1,4 @@
-//   UKEncodingTests.m
+//   UKURLEncodingTests.m
 //   Copyright 2012 Louis Vera
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,10 +13,11 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-#import "UKEncodingTests.h"
-#import "UKEncoding.h"
+#import "UKURLEncodingTests.h"
+#import "NSString+UKURLEncoding.h"
 
-@implementation UKEncodingTests
+@implementation UKURLEncodingTests
+@synthesize text, encoded;
 
 -(void)setUp {
 	NSString * special = @" ~!@#$%^&*()_+`-=[]\\{}|;':\"<>?/,.";
@@ -34,17 +35,22 @@
 	NSString * latin = @"ëñôý";
 	NSString * encodedLatin = @"%C3%AB%C3%B1%C3%B4%C3%BD";
 	
-	text = [NSArray arrayWithObjects:special, chinese, currency, inverted, latin, nil];
-	encoded = [NSArray arrayWithObjects:encodedSpecial, encodedChinese, encodedCurrency, encodedInverted, encodedLatin, nil];
+	self.text = [NSArray arrayWithObjects:special, chinese, currency, inverted, latin, nil];
+	self.encoded = [NSArray arrayWithObjects:encodedSpecial, encodedChinese, encodedCurrency, encodedInverted, encodedLatin, nil];
 	
+}
+
+-(void)tearDown {
+	self.text = nil;
+	self.encoded = nil;
 }
 
 -(void)testURLEncode {
 	NSString * test;
 	NSString * expected;
-	for(int i = 0; i < [text count]; i++) {
-		test = [[text objectAtIndex:i] urlEncode];
-		expected = [encoded objectAtIndex:i];
+	for(int i = 0; i < [self.text count]; i++) {
+		test = [[self.text objectAtIndex:i] urlEncode];
+		expected = [self.encoded objectAtIndex:i];
 		STAssertEqualObjects(expected, test, @"\n%@\n should equal \n%@\n", expected, test);
 	}
 }
@@ -52,9 +58,9 @@
 -(void)testURLDecode {
 	NSString * test;
 	NSString * expected;
-	for(int i = 0; i < [text count]; i++) {
-		test = [[encoded objectAtIndex:i] urlDecode];
-		expected = [text objectAtIndex:i];
+	for(int i = 0; i < [self.text count]; i++) {
+		test = [[self.encoded objectAtIndex:i] urlDecode];
+		expected = [self.text objectAtIndex:i];
 		STAssertEqualObjects(expected, test, @"\n%@\n should equal \n%@\n", expected, test);
 	}
 	test = [@"+" urlDecode];

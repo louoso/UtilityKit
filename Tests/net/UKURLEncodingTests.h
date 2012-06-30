@@ -1,4 +1,4 @@
-//   UKEncoding.h
+//   UKURLEncodingTests.h
 //   Copyright 2012 Louis Vera
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +13,15 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-#import "NSString+UKURLEncoding.h"
-#import "NSData+UKBase64.h"
+//  Application unit tests contain unit test code that must be injected into an application to run correctly.
+//  Define USE_APPLICATION_UNIT_TEST to 0 if the unit test code is designed to be linked into an independent test executable.
 
+#import <SenTestingKit/SenTestingKit.h>
+#import <UIKit/UIKit.h>
+
+@interface UKURLEncodingTests : SenTestCase
+
+@property (nonatomic, retain) NSArray * text;
+@property (nonatomic, retain) NSArray * encoded;
+
+@end
