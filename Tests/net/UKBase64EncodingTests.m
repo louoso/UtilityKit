@@ -12,8 +12,10 @@
 //   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
+
 #import "UKBase64EncodingTests.h"
 #import "NSData+UKBase64.h"
+#import "NSString+UKBase64.h"
 
 @implementation UKBase64EncodingTests
 @synthesize data, encoded;
@@ -40,7 +42,11 @@
 }
 
 -(void)testBase64Encode {
-	STAssertEqualObjects(self.encoded, [self.data base64Encode], @"\nUnexpected result of base64 encoding\n");
+	STAssertEqualObjects([self.data base64Encode], self.encoded, @"\nUnexpected result of base64 encoding\n");
+}
+
+-(void)testBase64Decode {
+	STAssertEqualObjects([self.encoded base64Decode], self.data, @"\nUnexpected result of base64 decoding\n");
 }
 
 @end

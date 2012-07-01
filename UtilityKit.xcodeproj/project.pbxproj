@@ -56,6 +56,9 @@
 		BF58E05E15965D5300B729CC /* NSString+UKURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */; };
 		BF58E07B159667D700B729CC /* NSString+UKURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */; };
 		BFDB2D7F159FAB4000FB33E7 /* UKURLEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2D7E159FAB4000FB33E7 /* UKURLEncodingTests.m */; };
+		BFDB2D9C159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */; };
+		BFDB2D9D159FAFB300FB33E7 /* NSString+UKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDB2D9A159FAFB300FB33E7 /* NSString+UKBase64.h */; };
+		BFDB2D9E159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,8 @@
 		BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UKURLEncoding.m"; sourceTree = "<group>"; };
 		BFDB2D7D159FAB4000FB33E7 /* UKURLEncodingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKURLEncodingTests.h; sourceTree = "<group>"; };
 		BFDB2D7E159FAB4000FB33E7 /* UKURLEncodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKURLEncodingTests.m; sourceTree = "<group>"; };
+		BFDB2D9A159FAFB300FB33E7 /* NSString+UKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UKBase64.h"; sourceTree = "<group>"; };
+		BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UKBase64.m"; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libUtilityKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUtilityKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -293,6 +298,8 @@
 				BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */,
 				BF3B586D159BE7BE0049D5C4 /* NSData+UKBase64.h */,
 				BF3B586E159BE7BE0049D5C4 /* NSData+UKBase64.m */,
+				BFDB2D9A159FAFB300FB33E7 /* NSString+UKBase64.h */,
+				BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */,
 			);
 			name = net;
 			path = Classes/net;
@@ -321,6 +328,7 @@
 				BF01A5B91583CDC9009FEF33 /* UKModel.h in Headers */,
 				BF58E05D15965D5300B729CC /* NSString+UKURLEncoding.h in Headers */,
 				BF3B586F159BE7BE0049D5C4 /* NSData+UKBase64.h in Headers */,
+				BFDB2D9D159FAFB300FB33E7 /* NSString+UKBase64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +446,7 @@
 				BF3B5871159BE7BE0049D5C4 /* NSData+UKBase64.m in Sources */,
 				BF417BCB159E54E500C64309 /* UKBase64EncodingTests.m in Sources */,
 				BFDB2D7F159FAB4000FB33E7 /* UKURLEncodingTests.m in Sources */,
+				BFDB2D9C159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +467,7 @@
 				BF01A5BA1583CDC9009FEF33 /* UKModel.m in Sources */,
 				BF58E05E15965D5300B729CC /* NSString+UKURLEncoding.m in Sources */,
 				BF3B5870159BE7BE0049D5C4 /* NSData+UKBase64.m in Sources */,
+				BFDB2D9E159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
