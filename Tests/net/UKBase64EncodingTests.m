@@ -30,10 +30,22 @@
 		0xe8, 0x6b, 0x05, 0x2a, 0xb9, 0xb6, 0x81, 0x3e, 0x4e, 0x5b, 0x6c, 0xeb, 0xe8, 0x27, 0xf6, 0xef,
 		0x63, 0xcf, 0xf0, 0x79
 	};
-	self.data = [[[NSData alloc] initWithBytesNoCopy:&random length:sizeof(random) freeWhenDone:NO] autorelease];
-	self.encoded = @"7cnna4bEJDjPMFkORWpedMpm5uR3A3ctzOk4hvwWb0tECzPtsJAI5J1eL/BRhlLC"
+	self.data = [NSArray arrayWithObjects:
+				 [NSData data],
+				 [[[NSData alloc] initWithBytesNoCopy:&random length:1 freeWhenDone:NO] autorelease],
+				 [[[NSData alloc] initWithBytesNoCopy:&random length:2 freeWhenDone:NO] autorelease],
+				 [[[NSData alloc] initWithBytesNoCopy:&random length:3 freeWhenDone:NO] autorelease],
+				 [[[NSData alloc] initWithBytesNoCopy:&random length:sizeof(random) freeWhenDone:NO] autorelease],
+				 nil];
+	self.encoded = [NSArray arrayWithObjects:
+					@"",
+					@"7Q==",
+					@"7ck=",
+					@"7cnn",
+					@"7cnna4bEJDjPMFkORWpedMpm5uR3A3ctzOk4hvwWb0tECzPtsJAI5J1eL/BRhlLC"
                     "ym/sCZ562g2FXGwxfaeW6Rpio0a+qC9er21eHE/RJe7oawUqubaBPk5bbOvoJ/bv"
-	                "Y8/weQ==";
+	                "Y8/weQ==",
+					nil];
 }
 
 -(void)tearDown {
@@ -42,11 +54,23 @@
 }
 
 -(void)testBase64Encode {
-	STAssertEqualObjects([self.data base64Encode], self.encoded, @"\nUnexpected result of base64 encoding\n");
+	NSData * test = nil;
+	NSString * expected = nil;
+	for (int i = 0; i < [self.data count]; i++) {
+		test = [self.data objectAtIndex:i];
+		expected = [self.encoded objectAtIndex:i];
+		STAssertEqualObjects([test base64Encode], expected, @"\nUnexpected result of base64 encoding\n");
+	}
 }
 
 -(void)testBase64Decode {
-	STAssertEqualObjects([self.encoded base64Decode], self.data, @"\nUnexpected result of base64 decoding\n");
+	NSString * test = nil;
+	NSData * expected = nil;
+	for (int i = 0; i < [self.data count]; i++) {
+		test = [self.encoded objectAtIndex:i];
+		expected = [self.data objectAtIndex:i];
+		STAssertEqualObjects([test base64Decode], expected, @"\nUnexpected result of base64 decoding\n");
+	}
 }
 
 @end

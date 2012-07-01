@@ -19,7 +19,7 @@
 
 @interface UKBase64EncodingTests : SenTestCase
 
-@property (nonatomic, retain) NSData * data;
-@property (nonatomic, retain) NSString * encoded;
+@property (nonatomic, retain) NSArray * data;
+@property (nonatomic, retain) NSArray * encoded;
 
 @end
