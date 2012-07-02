@@ -53,7 +53,7 @@
 			buffer[bufferIndex++] = padding;
 			buffer[bufferIndex++] = padding;
 		}
-		encoded = [[NSString alloc]initWithBytesNoCopy:buffer length:bufferLength encoding:NSASCIIStringEncoding freeWhenDone:YES];
+		encoded = [[[NSString alloc]initWithBytesNoCopy:buffer length:bufferLength encoding:NSASCIIStringEncoding freeWhenDone:YES]autorelease];
 	}
 	return encoded;
 }
