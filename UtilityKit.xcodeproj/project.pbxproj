@@ -59,6 +59,9 @@
 		BFDB2D9C159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */; };
 		BFDB2D9D159FAFB300FB33E7 /* NSString+UKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDB2D9A159FAFB300FB33E7 /* NSString+UKBase64.h */; };
 		BFDB2D9E159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */; };
+		BFDB2E4015A10BB000FB33E7 /* NSError+UKError.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2E3F15A10BB000FB33E7 /* NSError+UKError.m */; };
+		BFDB2E4115A10BB000FB33E7 /* NSError+UKError.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDB2E3E15A10BB000FB33E7 /* NSError+UKError.h */; };
+		BFDB2E4215A10BB000FB33E7 /* NSError+UKError.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2E3F15A10BB000FB33E7 /* NSError+UKError.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,8 @@
 		BFDB2D7E159FAB4000FB33E7 /* UKURLEncodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKURLEncodingTests.m; sourceTree = "<group>"; };
 		BFDB2D9A159FAFB300FB33E7 /* NSString+UKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UKBase64.h"; sourceTree = "<group>"; };
 		BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UKBase64.m"; sourceTree = "<group>"; };
+		BFDB2E3E15A10BB000FB33E7 /* NSError+UKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+UKError.h"; sourceTree = "<group>"; };
+		BFDB2E3F15A10BB000FB33E7 /* NSError+UKError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+UKError.m"; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libUtilityKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUtilityKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,6 +179,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BFDB2E3D15A10BB000FB33E7 /* error */,
 				BF58E05A15965D5300B729CC /* net */,
 				BF01A5B61583CDC9009FEF33 /* model */,
 				BF11D0C2151FAAE800067CE2 /* copy */,
@@ -305,6 +311,16 @@
 			path = Classes/net;
 			sourceTree = "<group>";
 		};
+		BFDB2E3D15A10BB000FB33E7 /* error */ = {
+			isa = PBXGroup;
+			children = (
+				BFDB2E3E15A10BB000FB33E7 /* NSError+UKError.h */,
+				BFDB2E3F15A10BB000FB33E7 /* NSError+UKError.m */,
+			);
+			name = error;
+			path = Classes/error;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -329,6 +345,7 @@
 				BF58E05D15965D5300B729CC /* NSString+UKURLEncoding.h in Headers */,
 				BF3B586F159BE7BE0049D5C4 /* NSData+UKBase64.h in Headers */,
 				BFDB2D9D159FAFB300FB33E7 /* NSString+UKBase64.h in Headers */,
+				BFDB2E4115A10BB000FB33E7 /* NSError+UKError.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +464,7 @@
 				BF417BCB159E54E500C64309 /* UKBase64EncodingTests.m in Sources */,
 				BFDB2D7F159FAB4000FB33E7 /* UKURLEncodingTests.m in Sources */,
 				BFDB2D9C159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */,
+				BFDB2E4015A10BB000FB33E7 /* NSError+UKError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +486,7 @@
 				BF58E05E15965D5300B729CC /* NSString+UKURLEncoding.m in Sources */,
 				BF3B5870159BE7BE0049D5C4 /* NSData+UKBase64.m in Sources */,
 				BFDB2D9E159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */,
+				BFDB2E4215A10BB000FB33E7 /* NSError+UKError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

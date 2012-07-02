@@ -14,13 +14,15 @@
 //   limitations under the License.
 
 #import "NSString+UKBase64.h"
+#import "NSError+UKError.h"
 
 #define xx 65
 
 @implementation NSString (UKBase64)
 
 -(NSData *)base64Decode {
-	return [self base64Decode:nil];
+	NSError * error = nil;
+	return [self base64Decode:&error];
 }
 
 -(NSData *)base64Decode:(NSError**)error {
@@ -69,24 +71,19 @@
 					}
 				}
 			}
-			if (count > 1) {
-				buffer[bufferIndex++] = ((accumulator[0] << 2) & 0xFC) | ((accumulator[1] >> 4) & 0x03);
-				if (count > 2) {
+			if (count > 0) {
+				if (count == 3) {
+					buffer[bufferIndex++] = ((accumulator[0] << 2) & 0xFC) | ((accumulator[1] >> 4) & 0x03);
 					buffer[bufferIndex++] = ((accumulator[1] << 4) & 0xF0) | ((accumulator[2] >> 2) & 0x0F);
+				} else if (count == 2) {
+					buffer[bufferIndex++] = ((accumulator[0] << 2) & 0xFC) | ((accumulator[1] >> 4) & 0x03);
+				} else {
+					*error = [NSError errorWithCode:UKBase64DecodingInvalidLength];
 				}
-			}else if (count == 1) {
-				NSDictionary * userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-										   @"Invalid number of characters", NSLocalizedDescriptionKey,
-										   @"There is one character remaining to decode, but at least 2 are needed for base64 decoding", NSLocalizedFailureReasonErrorKey, nil];
-				*error = [NSError errorWithDomain:@"UtilityKitErrorDomain" code:1 userInfo:userInfo];
 			}
 			decoded = [NSData dataWithBytesNoCopy:buffer length:bufferIndex freeWhenDone:YES];
 		} else if (!characters) {
-			NSDictionary * userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-									   @"Cannot convert to ASCII", NSLocalizedDescriptionKey,
-									   @"This string contains non-ASCII characters", NSLocalizedFailureReasonErrorKey,
-									   [NSNumber numberWithInt:NSASCIIStringEncoding], NSStringEncodingErrorKey, nil];
-			*error = [NSError errorWithDomain:@"UtilityKitErrorDomain" code:0 userInfo:userInfo];
+			*error = [NSError errorWithCode:UKBase64DecodingNotASCII];
 		} else if (length == 0) {
 			decoded = [NSData data];
 		}

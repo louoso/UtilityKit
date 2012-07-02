@@ -16,6 +16,7 @@
 #import "UKBase64EncodingTests.h"
 #import "NSData+UKBase64.h"
 #import "NSString+UKBase64.h"
+#import "NSError+UKError.h"
 
 @implementation UKBase64EncodingTests
 @synthesize data, encoded;
@@ -71,6 +72,18 @@
 		expected = [self.data objectAtIndex:i];
 		STAssertEqualObjects([test base64Decode], expected, @"\nUnexpected result of base64 decoding\n");
 	}
+	
+	NSError * error = nil;
+	test = @"A";
+	expected = [NSData data];
+	STAssertEqualObjects([test base64Decode:&error], expected, @"\nUnexpected result of base64 decoding\n");
+	STAssertEquals(error.code, UKBase64DecodingInvalidLength, @"\nExpected NSError with code UKBase64DecodingInvalidLength\n");
+	
+	error = nil;
+	test = @"你";
+	expected = nil;
+	STAssertEqualObjects([test base64Decode:&error], expected, @"\nUnexpected result of base64 decoding\n");
+	STAssertEquals(error.code, UKBase64DecodingNotASCII, @"\nExpected NSError with code UKBase64DecodingNotASCII\n");
 }
 
 @end
