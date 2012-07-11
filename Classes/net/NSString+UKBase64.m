@@ -50,9 +50,9 @@
 				xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx,
 				xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx,
 				xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx,
-				xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx,
+				xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx, xx
 			};
-			const char * data = [characters bytes];
+			const unsigned char * data = [characters bytes];
 			NSUInteger bufferLength = (length + 3) / 4 * 3;
 			char * buffer = malloc(bufferLength);
 			NSUInteger bufferIndex = 0;
@@ -60,7 +60,7 @@
 			char c;
 			int count = 0;
 			for (int i = 0; i < length; i++) {
-				c = toDecoded[data[i] & 0xFF];
+				c = toDecoded[data[i]];
 				if (c != xx) {
 					accumulator[count++] = c;
 					if (count > 3) {
