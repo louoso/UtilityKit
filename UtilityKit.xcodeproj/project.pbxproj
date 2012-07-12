@@ -51,6 +51,10 @@
 		BF3B586F159BE7BE0049D5C4 /* NSData+UKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B586D159BE7BE0049D5C4 /* NSData+UKBase64.h */; };
 		BF3B5870159BE7BE0049D5C4 /* NSData+UKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B586E159BE7BE0049D5C4 /* NSData+UKBase64.m */; };
 		BF3B5871159BE7BE0049D5C4 /* NSData+UKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B586E159BE7BE0049D5C4 /* NSData+UKBase64.m */; };
+		BF3CC68C15AE6BAC0064AA10 /* UKHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC68B15AE6BAC0064AA10 /* UKHashTests.m */; };
+		BF3CC69015AE6BBF0064AA10 /* NSData+UKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC68F15AE6BBF0064AA10 /* NSData+UKHash.m */; };
+		BF3CC69115AE6BDC0064AA10 /* NSData+UKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC68F15AE6BBF0064AA10 /* NSData+UKHash.m */; };
+		BF3CC69215AE6BE40064AA10 /* NSData+UKHash.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3CC68E15AE6BBF0064AA10 /* NSData+UKHash.h */; };
 		BF417BCB159E54E500C64309 /* UKBase64EncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF417BCA159E54E500C64309 /* UKBase64EncodingTests.m */; };
 		BF58E05D15965D5300B729CC /* NSString+UKURLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = BF58E05B15965D5300B729CC /* NSString+UKURLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF58E05E15965D5300B729CC /* NSString+UKURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */; };
@@ -112,6 +116,10 @@
 		BF3A171C1518090D0073ACA4 /* UKFunctionalCollectionsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFunctionalCollectionsTests.h; sourceTree = "<group>"; };
 		BF3B586D159BE7BE0049D5C4 /* NSData+UKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+UKBase64.h"; sourceTree = "<group>"; };
 		BF3B586E159BE7BE0049D5C4 /* NSData+UKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+UKBase64.m"; sourceTree = "<group>"; };
+		BF3CC68A15AE6BAC0064AA10 /* UKHashTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKHashTests.h; sourceTree = "<group>"; };
+		BF3CC68B15AE6BAC0064AA10 /* UKHashTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKHashTests.m; sourceTree = "<group>"; };
+		BF3CC68E15AE6BBF0064AA10 /* NSData+UKHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+UKHash.h"; sourceTree = "<group>"; };
+		BF3CC68F15AE6BBF0064AA10 /* NSData+UKHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+UKHash.m"; sourceTree = "<group>"; };
 		BF417BC9159E54E500C64309 /* UKBase64EncodingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKBase64EncodingTests.h; sourceTree = "<group>"; };
 		BF417BCA159E54E500C64309 /* UKBase64EncodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKBase64EncodingTests.m; sourceTree = "<group>"; };
 		BF58E05B15965D5300B729CC /* NSString+UKURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UKURLEncoding.h"; sourceTree = "<group>"; };
@@ -179,6 +187,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF3CC68D15AE6BBF0064AA10 /* crypto */,
 				BFDB2E3D15A10BB000FB33E7 /* error */,
 				BF58E05A15965D5300B729CC /* net */,
 				BF01A5B61583CDC9009FEF33 /* model */,
@@ -250,6 +259,7 @@
 		BF3A16DC1518076A0073ACA4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BF3CC68915AE6BAC0064AA10 /* crypto */,
 				BF58E05615965D3700B729CC /* net */,
 				BF01A5BC1583CE24009FEF33 /* model */,
 				BF11D0F6151FAFC200067CE2 /* copy */,
@@ -283,6 +293,26 @@
 			);
 			name = "f(x)";
 			path = "Tests/f(x)";
+			sourceTree = "<group>";
+		};
+		BF3CC68915AE6BAC0064AA10 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				BF3CC68A15AE6BAC0064AA10 /* UKHashTests.h */,
+				BF3CC68B15AE6BAC0064AA10 /* UKHashTests.m */,
+			);
+			name = crypto;
+			path = Tests/crypto;
+			sourceTree = "<group>";
+		};
+		BF3CC68D15AE6BBF0064AA10 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				BF3CC68E15AE6BBF0064AA10 /* NSData+UKHash.h */,
+				BF3CC68F15AE6BBF0064AA10 /* NSData+UKHash.m */,
+			);
+			name = crypto;
+			path = Classes/crypto;
 			sourceTree = "<group>";
 		};
 		BF58E05615965D3700B729CC /* net */ = {
@@ -346,6 +376,7 @@
 				BF3B586F159BE7BE0049D5C4 /* NSData+UKBase64.h in Headers */,
 				BFDB2D9D159FAFB300FB33E7 /* NSString+UKBase64.h in Headers */,
 				BFDB2E4115A10BB000FB33E7 /* NSError+UKError.h in Headers */,
+				BF3CC69215AE6BE40064AA10 /* NSData+UKHash.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +496,8 @@
 				BFDB2D7F159FAB4000FB33E7 /* UKURLEncodingTests.m in Sources */,
 				BFDB2D9C159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */,
 				BFDB2E4015A10BB000FB33E7 /* NSError+UKError.m in Sources */,
+				BF3CC68C15AE6BAC0064AA10 /* UKHashTests.m in Sources */,
+				BF3CC69015AE6BBF0064AA10 /* NSData+UKHash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +520,7 @@
 				BF3B5870159BE7BE0049D5C4 /* NSData+UKBase64.m in Sources */,
 				BFDB2D9E159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */,
 				BFDB2E4215A10BB000FB33E7 /* NSError+UKError.m in Sources */,
+				BF3CC69115AE6BDC0064AA10 /* NSData+UKHash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
