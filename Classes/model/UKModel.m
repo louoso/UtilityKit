@@ -100,7 +100,7 @@
 }
 
 #pragma mark -
-#pragma mark NSObject
+#pragma mark NSCopying
 
 -(id)copyWithZone:(NSZone *)zone {
 	UKModel * copy = [[self class] allocWithZone:zone];
