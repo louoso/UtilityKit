@@ -13,6 +13,27 @@ Categories found under f(x) contain functional extensions to common data structu
 
 Additionally, UKFunctions.h contains methods that allow for map and filter composition.
 
+## Encoders
+
+Categories found under net contain categories for encoding & decoding text.
+
+* Base64
+* Url
+* ISO8601
+
+## Model
+
+Boilerplate implementations for objects composed using properties.
+
+* isEqual
+* hash
+* description
+* copyWithZone
+
+## Other
+
+* Easy hash from NSData
+
 ## Getting Started
 
 * The best instructions are available [here](http://www.amateurinmotion.com/articles/2009/02/08/creating-a-static-library-for-iphone.html)
