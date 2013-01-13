@@ -50,7 +50,7 @@
 	BOOL equal = NO;
 	if (model == self) {
 		equal = YES;
-	} else if (model && [model isKindOfClass:[self class]]) {
+	} else if ([model isKindOfClass:[self class]]) {
 		equal = [self isEqualToModel:model];
 	}
 	return equal;
