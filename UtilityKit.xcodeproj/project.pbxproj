@@ -66,6 +66,10 @@
 		BFDB2E4015A10BB000FB33E7 /* NSError+UKError.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2E3F15A10BB000FB33E7 /* NSError+UKError.m */; };
 		BFDB2E4115A10BB000FB33E7 /* NSError+UKError.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDB2E3E15A10BB000FB33E7 /* NSError+UKError.h */; };
 		BFDB2E4215A10BB000FB33E7 /* NSError+UKError.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDB2E3F15A10BB000FB33E7 /* NSError+UKError.m */; };
+		BFF8CFC816A26EA80021DA82 /* NSDateFormatter+UKISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF8CFC616A26EA80021DA82 /* NSDateFormatter+UKISO8601.h */; };
+		BFF8CFCA16A26EA80021DA82 /* NSDateFormatter+UKISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8CFC716A26EA80021DA82 /* NSDateFormatter+UKISO8601.m */; };
+		BFF8CFCF16A26F1D0021DA82 /* UKISO8601Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8CFCE16A26F1D0021DA82 /* UKISO8601Tests.m */; };
+		BFF8CFEA16A270670021DA82 /* NSDateFormatter+UKISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8CFC716A26EA80021DA82 /* NSDateFormatter+UKISO8601.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +134,10 @@
 		BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UKBase64.m"; sourceTree = "<group>"; };
 		BFDB2E3E15A10BB000FB33E7 /* NSError+UKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+UKError.h"; sourceTree = "<group>"; };
 		BFDB2E3F15A10BB000FB33E7 /* NSError+UKError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+UKError.m"; sourceTree = "<group>"; };
+		BFF8CFC616A26EA80021DA82 /* NSDateFormatter+UKISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+UKISO8601.h"; sourceTree = "<group>"; };
+		BFF8CFC716A26EA80021DA82 /* NSDateFormatter+UKISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+UKISO8601.m"; sourceTree = "<group>"; };
+		BFF8CFCD16A26F1D0021DA82 /* UKISO8601Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKISO8601Tests.h; sourceTree = "<group>"; };
+		BFF8CFCE16A26F1D0021DA82 /* UKISO8601Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKISO8601Tests.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libUtilityKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUtilityKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -318,10 +326,12 @@
 		BF58E05615965D3700B729CC /* net */ = {
 			isa = PBXGroup;
 			children = (
-				BFDB2D7D159FAB4000FB33E7 /* UKURLEncodingTests.h */,
-				BFDB2D7E159FAB4000FB33E7 /* UKURLEncodingTests.m */,
 				BF417BC9159E54E500C64309 /* UKBase64EncodingTests.h */,
 				BF417BCA159E54E500C64309 /* UKBase64EncodingTests.m */,
+				BFF8CFCD16A26F1D0021DA82 /* UKISO8601Tests.h */,
+				BFF8CFCE16A26F1D0021DA82 /* UKISO8601Tests.m */,
+				BFDB2D7D159FAB4000FB33E7 /* UKURLEncodingTests.h */,
+				BFDB2D7E159FAB4000FB33E7 /* UKURLEncodingTests.m */,
 			);
 			name = net;
 			path = Tests/net;
@@ -330,12 +340,14 @@
 		BF58E05A15965D5300B729CC /* net */ = {
 			isa = PBXGroup;
 			children = (
-				BF58E05B15965D5300B729CC /* NSString+UKURLEncoding.h */,
-				BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */,
 				BF3B586D159BE7BE0049D5C4 /* NSData+UKBase64.h */,
 				BF3B586E159BE7BE0049D5C4 /* NSData+UKBase64.m */,
+				BFF8CFC616A26EA80021DA82 /* NSDateFormatter+UKISO8601.h */,
+				BFF8CFC716A26EA80021DA82 /* NSDateFormatter+UKISO8601.m */,
 				BFDB2D9A159FAFB300FB33E7 /* NSString+UKBase64.h */,
 				BFDB2D9B159FAFB300FB33E7 /* NSString+UKBase64.m */,
+				BF58E05B15965D5300B729CC /* NSString+UKURLEncoding.h */,
+				BF58E05C15965D5300B729CC /* NSString+UKURLEncoding.m */,
 			);
 			name = net;
 			path = Classes/net;
@@ -377,6 +389,7 @@
 				BFDB2D9D159FAFB300FB33E7 /* NSString+UKBase64.h in Headers */,
 				BFDB2E4115A10BB000FB33E7 /* NSError+UKError.h in Headers */,
 				BF3CC69215AE6BE40064AA10 /* NSData+UKHash.h in Headers */,
+				BFF8CFC816A26EA80021DA82 /* NSDateFormatter+UKISO8601.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +511,8 @@
 				BFDB2E4015A10BB000FB33E7 /* NSError+UKError.m in Sources */,
 				BF3CC68C15AE6BAC0064AA10 /* UKHashTests.m in Sources */,
 				BF3CC69015AE6BBF0064AA10 /* NSData+UKHash.m in Sources */,
+				BFF8CFCA16A26EA80021DA82 /* NSDateFormatter+UKISO8601.m in Sources */,
+				BFF8CFCF16A26F1D0021DA82 /* UKISO8601Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +536,7 @@
 				BFDB2D9E159FAFB300FB33E7 /* NSString+UKBase64.m in Sources */,
 				BFDB2E4215A10BB000FB33E7 /* NSError+UKError.m in Sources */,
 				BF3CC69115AE6BDC0064AA10 /* NSData+UKHash.m in Sources */,
+				BFF8CFEA16A270670021DA82 /* NSDateFormatter+UKISO8601.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
