@@ -27,7 +27,7 @@
 
 +(NSArray *)arrayFrom:(UKGen)f whileTrue:(UKFilter)g {
 	NSMutableArray * array = [NSMutableArray arrayWithCapacity:UK_INITIAL_CAPACITY];
-	for (NSObject * object = f(); g(object); object = f()) {
+	for (id<NSObject> object = f(); g(object); object = f()) {
 		[array addObject:object];
 	}
 	return array;
@@ -37,7 +37,7 @@
 	NSMutableArray * mapped = nil;
 	if(self) {
 		mapped = [NSMutableArray arrayWithCapacity:[self count]];
-		for (NSObject * object in self) {
+		for (id<NSObject> object in self) {
 			[mapped addObject:f(object)];
 		}
 	}
@@ -49,7 +49,7 @@
 	if(self) {
 		int capacity = MIN(UK_INITIAL_CAPACITY, [self count]);
 		filtered = [NSMutableArray arrayWithCapacity:capacity];
-		for (NSObject * object in self) {
+		for (id<NSObject> object in self) {
 			if (f(object)) {
 				[filtered addObject:object];
 			}
@@ -63,7 +63,7 @@
 	if(self) {
 		int capacity = MIN(UK_INITIAL_CAPACITY, [self count]);
 		mapped = [NSMutableArray arrayWithCapacity:capacity];
-		for (NSObject * object in self) {
+		for (id<NSObject> object in self) {
 			if (f(object)) {
 				[mapped addObject:g(object)];
 			}
@@ -72,10 +72,10 @@
 	return mapped;
 }
 
--(NSObject *)reduce:(UKReduce)f {
-	NSObject * reduced = nil;
+-(id<NSObject>)reduce:(UKReduce)f {
+	id<NSObject> reduced = nil;
 	if(self) {
-		for (NSObject * object in self) {
+		for (id<NSObject> object in self) {
 			reduced = reduced ? f(reduced, object): object;
 		}
 	}
@@ -87,9 +87,9 @@
 	if(self) {
 		allGroups = [NSMutableDictionary dictionary];
 		NSMutableArray * group = nil;
-		NSObject * key = nil;
+		id<NSObject> key = nil;
 		int capacity = MIN(UK_INITIAL_CAPACITY, [self count]);
-		for (NSObject * object in self) {
+		for (id<NSObject> object in self) {
 			key = f(object);
 			group = [allGroups objectForKey:key] ?: [NSMutableArray arrayWithCapacity:capacity];
 			[group addObject:object];

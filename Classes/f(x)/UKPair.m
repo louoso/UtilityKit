@@ -25,7 +25,7 @@
 	[super dealloc];
 }
 
-+(UKPair *)pairWithKey:(NSObject *)key value:(NSObject *)value {
++(UKPair *)pairWithKey:(id<NSObject>)key value:(id<NSObject>)value {
 	UKPair * pair = [[UKPair new]autorelease];
 	pair.key = key;
 	pair.value = value;

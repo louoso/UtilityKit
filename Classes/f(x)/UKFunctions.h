@@ -21,10 +21,10 @@
 #define UK_INITIAL_CAPACITY 10
 
 //Function types
-typedef NSObject * (^UKMap)(NSObject *);
-typedef BOOL (^UKFilter)(NSObject *);
-typedef NSObject * (^UKReduce)(NSObject *, NSObject *);
-typedef NSObject * (^UKGen)();
+typedef id<NSObject> (^UKMap)(id<NSObject>);
+typedef BOOL (^UKFilter)(id<NSObject>);
+typedef id<NSObject> (^UKReduce)(id<NSObject>, id<NSObject>);
+typedef id<NSObject> (^UKGen)();
 
 #endif
 

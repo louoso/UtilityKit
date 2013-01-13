@@ -20,7 +20,7 @@
 
 +(UKMap)zipWithIndex {
 	__block NSUInteger index = 0;
-	UKMap zipWithIndex = (UKMap)^(NSObject * o) {
+	UKMap zipWithIndex = (UKMap)^(id<NSObject> o) {
 		return [UKPair pairWithKey:[NSNumber numberWithInt:index++] value:o];
 	};
 	return [[zipWithIndex copy]autorelease];
@@ -37,7 +37,7 @@
 +(UKMap)compose:(UKMap)f of:(UKMap)g {
 	__block UKMap copyOfF = [[f copy]autorelease];
 	__block UKMap copyOfG = [[g copy]autorelease];
-	UKMap fg = (UKMap)^(NSObject * o) {
+	UKMap fg = (UKMap)^(id<NSObject> o) {
 		return copyOfF(copyOfG(o));
 	};
 	return [[fg copy]autorelease];
@@ -46,7 +46,7 @@
 +(UKFilter)filter:(UKFilter)f orElse:(UKFilter)g {
 	__block UKFilter copyOfF = [[f copy]autorelease];
 	__block UKFilter copyOfG = [[g copy]autorelease];
-	UKFilter fg = (UKFilter)^(NSObject * o) {
+	UKFilter fg = (UKFilter)^(id<NSObject> o) {
 		return copyOfF(o) || copyOfG(o);
 	};
 	return [[fg copy]autorelease];
@@ -55,7 +55,7 @@
 +(UKFilter)filter:(UKFilter)f andThen:(UKFilter)g {
 	__block UKFilter copyOfF = [[f copy]autorelease];
 	__block UKFilter copyOfG = [[g copy]autorelease];
-	UKFilter fg = (UKFilter)^(NSObject * o) {
+	UKFilter fg = (UKFilter)^(id<NSObject> o) {
 		return copyOfF(o) && copyOfG(o);
 	};
 	return [[fg copy]autorelease];

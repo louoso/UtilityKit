@@ -21,7 +21,7 @@
 	NSMutableDictionary * mapped = nil;
 	if(self) {
 		mapped = [NSMutableDictionary dictionaryWithCapacity:[self count]];
-		for (NSObject * key in self) {
+		for (id<NSObject> key in self) {
 			[mapped setObject:f([self objectForKey:key]) forKey:key];
 		}
 	}
@@ -33,7 +33,7 @@
 	if(self) {
 		int capacity = MIN(UK_INITIAL_CAPACITY, [self count]);
 		filtered = [NSMutableDictionary dictionaryWithCapacity:capacity];
-		for (NSObject * key in self) {
+		for (id<NSObject> key in self) {
 			if (f(key)) {
 				[filtered setObject:[self objectForKey:key] forKey:key];
 			}
@@ -47,8 +47,8 @@
 	if(self) {
 		int capacity = MIN(UK_INITIAL_CAPACITY, [self count]);
 		filtered = [NSMutableDictionary dictionaryWithCapacity:capacity];
-		NSObject * value = nil;
-		for (NSObject * key in self) {
+		id<NSObject> value = nil;
+		for (id<NSObject> key in self) {
 			value = [self objectForKey:key];
 			if (f(value)) {
 				[filtered setObject:value forKey:key];
@@ -62,7 +62,7 @@
 	NSMutableArray * pairs = nil;
 	if(self) {
 		pairs = [NSMutableArray arrayWithCapacity:[self count]];
-	  	for (NSObject * key in self) {
+	  	for (id<NSObject> key in self) {
 			[pairs addObject: [UKPair pairWithKey:key value:[self objectForKey:key]]];
 		}
 	}

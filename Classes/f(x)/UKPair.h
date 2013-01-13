@@ -17,9 +17,9 @@
 
 @interface UKPair : UKModel
 
-@property (nonatomic, retain) NSObject * key;
-@property (nonatomic, retain) NSObject * value;
+@property (nonatomic, retain) id<NSObject> key;
+@property (nonatomic, retain) id<NSObject> value;
 
-+(UKPair *)pairWithKey:(NSObject *)key value:(NSObject *)value;
++(UKPair *)pairWithKey:(id<NSObject>)key value:(id<NSObject>)value;
 
 @end

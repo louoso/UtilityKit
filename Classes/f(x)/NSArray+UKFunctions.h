@@ -23,7 +23,7 @@
 -(NSArray *)map:(UKMap)f;
 -(NSArray *)filter:(UKFilter)f;
 -(NSArray *)filter:(UKFilter)f andThen:(UKMap)g;
--(NSObject *)reduce:(UKReduce)f;
+-(id<NSObject>)reduce:(UKReduce)f;
 -(NSDictionary *)groupBy:(UKMap)f;
 
 @end
